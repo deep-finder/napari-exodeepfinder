@@ -90,7 +90,7 @@ def layers_df_list_to_final_df(layers_df_list: list, class_numbers: list):
         # there seems to be a bug in Napari, where a duplicated layer might be the ~same df object
         df = dataframe.copy(deep=True)
         class_label = class_numbers[i]
-        df.insert(loc=0, column='tomo_idx', value='')
+        df.insert(loc=0, column='tomo_idx', value='0')
         df.insert(loc=1, column='class_label', value=class_label)
         final_list.append(df)
     return pd.concat(final_list, ignore_index=True)
