@@ -1,16 +1,16 @@
-# napari-deepfinder
+# napari-exodeepfinder
 
-[![License GNU GPL v3.0](https://img.shields.io/pypi/l/napari-deepfinder.svg?color=green)](https://github.com/deep-finder/napari-deepfinder/raw/main/LICENSE)
-[![PyPI](https://img.shields.io/pypi/v/napari-deepfinder.svg?color=green)](https://pypi.org/project/napari-deepfinder)
-[![Python Version](https://img.shields.io/pypi/pyversions/napari-deepfinder.svg?color=green)](https://python.org)
-[![tests](https://github.com/deep-finder/napari-deepfinder/workflows/tests/badge.svg)](https://github.com/deep-finder/napari-deepfinder/actions)
-[![codecov](https://codecov.io/gh/deep-finder/napari-deepfinder/branch/main/graph/badge.svg)](https://codecov.io/gh/deep-finder/napari-deepfinder)
-[![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/napari-deepfinder)](https://napari-hub.org/plugins/napari-deepfinder)
+[![License GNU GPL v3.0](https://img.shields.io/pypi/l/napari-exodeepfinder.svg?color=green)](https://github.com/deep-finder/napari-exodeepfinder/raw/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/napari-exodeepfinder.svg?color=green)](https://pypi.org/project/napari-exodeepfinder)
+[![Python Version](https://img.shields.io/pypi/pyversions/napari-exodeepfinder.svg?color=green)](https://python.org)
+[![tests](https://github.com/deep-finder/napari-exodeepfinder/workflows/tests/badge.svg)](https://github.com/deep-finder/napari-exodeepfinder/actions)
+[![codecov](https://codecov.io/gh/deep-finder/napari-exodeepfinder/branch/main/graph/badge.svg)](https://codecov.io/gh/deep-finder/napari-exodeepfinder)
+[![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/napari-exodeepfinder)](https://napari-hub.org/plugins/napari-exodeepfinder)
 
-A napari plugin for the DeepFinder library which includes display, annotation, target generation, segmentation and clustering functionalities.
+A napari plugin for the ExoDeepFinder library which includes display, annotation, target generation, segmentation and clustering functionalities.
 An orthoslice view has been added for an easier visualisation and annotation process.
 
-**The documentation for users is available [here](https://deep-finder.github.io/napari-deepfinder/).**
+**The documentation for users is available [here](https://deep-finder.github.io/napari-exodeepfinder/).**
 
 ----------------------------------
 
@@ -26,15 +26,9 @@ https://napari.org/plugins/index.html
 
 ## Installation
 
-You can install `napari-deepfinder` via [pip]:
-
-    pip install napari-deepfinder
-
-
-
-To install latest development version :
-
-    pip install git+https://github.com/deep-finder/napari-deepfinder.git
+1. Create a conda environment with python 3.10: `conda create -n napari-exodeepfinder python=3.10`
+1. Activate the environment: `conda activate napari-exodeepfinder`
+1. Install napari: `pip install napari-exodeepfinder`
 
 
 ## Contributing
@@ -45,7 +39,7 @@ the coverage at least stays the same before you submit a pull request.
 ## License
 
 Distributed under the terms of the [GNU GPL v3.0] license,
-"napari-deepfinder" is free and open source software
+"napari-exodeepfinder" is free and open source software
 
 ## Issues
 
@@ -62,7 +56,7 @@ If you encounter any problems, please [file an issue] along with a detailed desc
 [Mozilla Public License 2.0]: https://www.mozilla.org/media/MPL/2.0/index.txt
 [cookiecutter-napari-plugin]: https://github.com/napari/cookiecutter-napari-plugin
 
-[file an issue]: https://github.com/deep-finder/napari-deepfinder/issues
+[file an issue]: https://github.com/deep-finder/napari-exodeepfinder/issues
 
 [napari]: https://github.com/napari/napari
 [tox]: https://tox.readthedocs.io/en/latest/

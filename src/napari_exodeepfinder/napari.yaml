@@ -1,0 +1,61 @@
+name: napari-exodeepfinder
+display_name: Napari ExoDeepFinder
+contributions:
+  commands:
+    - id: napari-exodeepfinder.get_reader
+      python_name: napari_exodeepfinder._reader:napari_get_reader
+      title: Open data with Napari ExoDeepFinder
+    - id: napari-exodeepfinder.make_denoise_widget
+      python_name: napari_exodeepfinder._widget:denoise_widget
+      title: Make denoise widget
+    - id: napari-exodeepfinder.make_reorder_widget
+      python_name: napari_exodeepfinder._widget:reorder_widget
+      title: Reorder layers automatically
+    - id: napari-exodeepfinder.make_add_points_widget
+      python_name: napari_exodeepfinder._widget:AddPointsWidget
+      title: Add points to layers
+    - id: napari-exodeepfinder.write_annotations
+      python_name: napari_exodeepfinder._writer:write_annotations_xml
+      title: Save annotation layers (points) to xml file
+    - id: napari-exodeepfinder.write_labelmap
+      python_name: napari_exodeepfinder._writer:write_labelmap
+      title: Save labelmap layer (labels) to mrc file
+    - id: napari-exodeepfinder.write_tomogram
+      python_name: napari_exodeepfinder._writer:write_tomogram
+      title: Save tomogram layer (image) to mrc file
+    - id: napari-exodeepfinder.make_orthoview
+      python_name: napari_exodeepfinder._orthoview_widget:Orthoslice
+      title: Orthoslice
+    - id: napari-exodeepfinder.make_segmentation
+      python_name: napari_exodeepfinder._segmentation_widget:SegmentationWidget
+      title: Segmentation
+    - id: napari-exodeepfinder.make_cluster
+      python_name: napari_exodeepfinder._cluster_widget:ClusterWidget
+      title: Clustering
+  readers:
+    - command: napari-exodeepfinder.get_reader
+      accepts_directories: false
+      filename_patterns: ['*.mrc', '*.map', '*.rec', '*.h5', '*.tif', '*.TIF', '*.xml', '*.ods', '*.xls', '*.xlsx']
+  writers:
+    - command: napari-exodeepfinder.write_annotations
+      layer_types: ['points*']
+      filename_extensions: ['.xml']
+    - command: napari-exodeepfinder.write_labelmap
+      layer_types: ['labels']
+      filename_extensions: ['.mrc']
+    - command: napari-exodeepfinder.write_tomogram
+      layer_types: [ 'image' ]
+      filename_extensions: [ '.mrc' ]
+  widgets:
+    - command: napari-exodeepfinder.make_reorder_widget
+      display_name: Reorder layers automatically
+    - command: napari-exodeepfinder.make_denoise_widget
+      display_name: Denoise tomogram
+    - command: napari-exodeepfinder.make_add_points_widget
+      display_name: Annotation
+    - command: napari-exodeepfinder.make_orthoview
+      display_name: Orthoslice view
+    - command: napari-exodeepfinder.make_segmentation
+      display_name: Segmentation
+    - command: napari-exodeepfinder.make_cluster
+      display_name: Clustering

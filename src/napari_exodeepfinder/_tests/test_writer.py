@@ -1,4 +1,4 @@
-from napari_deepfinder import write_annotations_xml, write_labelmap, write_tomogram
+from napari_exodeepfinder import write_annotations_xml, write_labelmap, write_tomogram
 import numpy as np
 import os
 

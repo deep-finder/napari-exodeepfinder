@@ -1,5 +1,5 @@
 
-Welcome to napari-deepfinder's documentation!
+Welcome to napari-exodeepfinder's documentation!
 ===============================================================
 
 Contents:

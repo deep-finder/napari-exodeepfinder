@@ -4,13 +4,13 @@ Developers
 Readers
 -------
 
-.. automodule:: napari_deepfinder._reader
+.. automodule:: napari_exodeepfinder._reader
    :members:
 
 Writers
 -------
 
-.. automodule:: napari_deepfinder._writer
+.. automodule:: napari_exodeepfinder._writer
    :members:
 
 Widgets
@@ -19,28 +19,28 @@ Widgets
 Reorder layers
 ++++++++++++++
 
-.. autofunction:: napari_deepfinder._widget::reorder_widget
+.. autofunction:: napari_exodeepfinder._widget::reorder_widget
 
 Denoising
 +++++++++
 
-.. autofunction:: napari_deepfinder._widget::denoise_widget
+.. autofunction:: napari_exodeepfinder._widget::denoise_widget
 
 Annotation
 ++++++++++
 
-.. autoclass:: napari_deepfinder._widget::AddPointsWidget
+.. autoclass:: napari_exodeepfinder._widget::AddPointsWidget
    :members:
 
 Segmentation
 ++++++++++++
 
-.. automodule:: napari_deepfinder._segmentation_widget
+.. automodule:: napari_exodeepfinder._segmentation_widget
    :members:
 
 Clustering
 ++++++++++
 
-.. automodule:: napari_deepfinder._cluster_widget
+.. automodule:: napari_exodeepfinder._cluster_widget
    :members:
 

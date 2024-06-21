@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# napari-deepfinder documentation build configuration file
+# napari-exodeepfinder documentation build configuration file
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -46,8 +46,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'napari-deepfinder'
-copyright = u'2023, napari-deepfinder'
+project = u'napari-exodeepfinder'
+copyright = u'2023, napari-exodeepfinder'
 author = u'Constantin Aronssohn'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -253,7 +253,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'napari-cookiecutterplugin_name', u'napari-deepfinder Documentation',
+    (master_doc, 'napari-cookiecutterplugin_name', u'napari-exodeepfinder Documentation',
      [author], 1)
 ]
 
@@ -267,7 +267,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'napari-cookiecutterplugin_name', u'napari-deepfinder Documentation',
+  (master_doc, 'napari-cookiecutterplugin_name', u'napari-exodeepfinder Documentation',
    author, 'napari-cookiecutterplugin_name', 'One line description of project.',
    'Miscellaneous'),
 ]

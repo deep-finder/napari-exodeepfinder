@@ -4,7 +4,7 @@ import collections
 from scipy.ndimage import uniform_filter
 from qtpy import QtCore
 
-from napari_deepfinder import (
+from napari_exodeepfinder import (
     AddPointsWidget,
     ClusterWidget,
     Orthoslice,

@@ -1,4 +1,4 @@
-from napari_deepfinder import napari_get_reader
+from napari_exodeepfinder import napari_get_reader
 import numpy as np
 import mrcfile
 

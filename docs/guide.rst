@@ -7,14 +7,14 @@ General purpose visualisation
 Open files
 ++++++++++
 
-Once `napari-deepfinder` is installed, you will be able to open the files associated with the cryo-et workflow:
+Once `napari-exodeepfinder` is installed, you will be able to open the files associated with the cryo-et workflow:
 
 * Tomograms and segmentation maps as `.mrc`, `.map`, `.rec`, `.h5`, `.tif` or `.TIF`
 * Annotation object lists as `.xml`, `.ods`, `.xls` or `.xlsx`
 
 .. note:: The following features are all different widgets included in the plugin.
 
-    To open them, click on the `Plugins` menu of napari, select napari-deepfinder` and you will see the list of widgets available.
+    To open them, click on the `Plugins` menu of napari, select napari-exodeepfinder` and you will see the list of widgets available.
     Click on the desired widget of this list to enable or disable it!
 
 Automatic reordering of layers
@@ -60,13 +60,13 @@ From the widget you can:
 Inference phase
 ---------------
 
-.. important:: This phase is only possible once DeepFinder has been trained, training does not happen in this plugin.
+.. important:: This phase is only possible once ExoDeepFinder has been trained, training does not happen in this plugin.
 
 Segmentation
 ++++++++++++
 The `Segmentation` widget serves as a graphical user interface to generate a segmentation map based on the trained DeepFinder model.
 You need to select the file containing the weights of the network and set other parameters.
-Those parameters are mostly explained here: https://deepfinder.readthedocs.io/en/latest/guide.html#segmentation.
+Those parameters are explained here: https://deepfinder.readthedocs.io/en/latest/guide.html#segmentation.
 
 .. important:: Be aware that this step might last several minutes and consume a lot of RAM and computing ressources
     (you can play with the patch size to optimize the segmentation time:
