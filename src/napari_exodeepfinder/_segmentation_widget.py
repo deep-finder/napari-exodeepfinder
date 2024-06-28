@@ -19,8 +19,6 @@ class SegmentationWidget(QWidget):
         super().__init__()
         self.viewer = napari_viewer
 
-        self.labelmap = None
-
         self.print_signal.connect(self.on_print_signal)
 
         # Use this event because of bug in viewer.events.layers_change.connect() : it doesn't register name change
@@ -131,19 +129,20 @@ class SegmentationWidget(QWidget):
         current_layer_text = self._input_layer_box.currentText()
         self.data = self.viewer.layers[current_layer_text].data
 
+        # invert axes from z,y,x to x,y,z (weird convention)
+        data = np.transpose(self.data, (2, 1, 0))
+
         # Initialize segmentation:
         seg = Segment(Ncl=Ncl, path_weights=path_weights, patch_size=psize)
         seg.set_observer(core.observer_gui(self.print_signal))
 
         # Segment data:
-        scoremaps = seg.launch(self.data)
+        scoremaps = seg.launch(data)
 
-        seg.display('Saving labelmap ...')
+        seg.display('Saving labelmap...')
         # Get labelmap from scoremaps and save:
-        labelmap_not_converted = sm.to_labelmap(scoremaps)
-        # invert axes from z,y,x to x,y,z (weird convention)
-        self.labelmap = np.transpose(labelmap_not_converted, (2, 1, 0))
-        cm.write_array(self.labelmap, path_lmap)
+        labelmap = sm.to_labelmap(scoremaps)
+        cm.write_array(labelmap, path_lmap)
 
         # Get binned labelmap and save:
         if self.bin_label_map.isChecked():
@@ -154,8 +153,8 @@ class SegmentationWidget(QWidget):
             labelmapB = np.transpose(labelmapB_not_converted, (2, 1, 0))
             cm.write_array(labelmapB, s[0] + '_binned' + s[1])
 
-        seg.display('Finished !')
-        return labelmap_not_converted
+        seg.display('Finished!')
+        return np.transpose(labelmap, (2, 1, 0))
 
     def add_labels(self, labelmap):
         self.viewer.add_labels(labelmap)
