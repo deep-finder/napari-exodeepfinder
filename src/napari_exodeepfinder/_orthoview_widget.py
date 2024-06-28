@@ -502,10 +502,10 @@ class Orthoslice(QWidget):
             layer = event.source
             # handle name change in a "dirty" way
             index = index_of_layer(self.main_view, layer)
-            if layer.name != self.old_layer_names[index]:
+            self.old_layer_names = [layer.name for layer in self.main_view.layers]
+            if type(index) != bool and layer.name != self.old_layer_names[index]:
                 for view in secondary_viewers:
                     view.layers[index].name = layer.name
-                self.old_layer_names[index] = layer.name
         # TODO: could this be done with copy?
         if isinstance(layer, image):
             for view in secondary_viewers:

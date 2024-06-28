@@ -1,3 +1,6 @@
+import napari.layers.labels
+import napari.layers.labels.labels
+import napari.layers.shapes
 from qtpy.QtWidgets import QWidget, QGridLayout, QComboBox, QPushButton, QLabel, QGroupBox, QVBoxLayout, QTextEdit, \
     QSpinBox, QFileDialog, QLineEdit
 from qtpy import QtCore
