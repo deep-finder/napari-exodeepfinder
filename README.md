@@ -30,7 +30,6 @@ https://napari.org/plugins/index.html
 1. Activate the environment: `conda activate napari-exodeepfinder`
 1. Install napari: `pip install napari-exodeepfinder`
 
-
 ## Contributing
 
 Contributions are very welcome. Tests can be run with [tox], please ensure
