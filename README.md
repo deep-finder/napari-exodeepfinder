@@ -10,8 +10,6 @@
 A napari plugin for the ExoDeepFinder library which includes display, annotation, target generation, segmentation and clustering functionalities.
 An orthoslice view has been added for an easier visualisation and annotation process.
 
-**The documentation for users is available [here](https://deep-finder.github.io/napari-exodeepfinder/).**
-
 ----------------------------------
 
 This [napari] plugin was generated with [Cookiecutter] using [@napari]'s [cookiecutter-napari-plugin] template.
