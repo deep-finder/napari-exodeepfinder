@@ -575,14 +575,12 @@ class Orthoslice(QWidget):
                 view.layers[layer.name].opacity = layer.opacity
                 view.layers[layer.name].brush_size = layer.brush_size
                 view.layers[layer.name].blending = layer.blending
-                view.layers[layer.name].color_mode = layer.color_mode
+                view.layers[layer.name].colormap = layer.colormap
                 view.layers[layer.name].contour = layer.contour
                 view.layers[layer.name].n_edit_dimensions = layer.n_edit_dimensions
                 view.layers[layer.name].contiguous = layer.contiguous
                 view.layers[layer.name].preserve_labels = layer.preserve_labels
                 view.layers[layer.name].show_selected_label = layer.show_selected_label
-                view.layers[layer.name].color = layer.color
-                view.layers[layer.name].num_colors = layer.num_colors
                 view.layers[layer.name].visible = layer.visible
 
     def end_ortho(self):
